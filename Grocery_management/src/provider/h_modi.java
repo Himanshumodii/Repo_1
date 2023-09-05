@@ -3,10 +3,11 @@ import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
 public class h_modi{
 	
 	public static void main(String[] args)throws Exception {
-		//TODO Auto-generated method stub
+	//TODO Auto-generated method stub
     String url="jdbc:mysql://localhost:3306/sys";
     String uname="root";
     String pass="root";
@@ -21,10 +22,9 @@ public class h_modi{
     {
       userData=rs.getInt(1)+":"+rs.getString(2);
       System.out.println(userData);
-    	//textbox1.setText(Integer.toString(rs.getInt(1)));
+      //textbox1.setText(Integer.toString(rs.getInt(1)));
     }
     st.close();
     con.close();
-	}
+  	}
 }
-

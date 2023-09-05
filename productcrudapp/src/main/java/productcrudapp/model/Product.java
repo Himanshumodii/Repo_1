@@ -17,7 +17,7 @@ public class Product {
 	public int getId() {
 		return id;
 	}
-	public String getName() {
+	public String getName(){
 		return name;
 	}
 	public String getDescription() {
@@ -38,7 +38,7 @@ public class Product {
 	public void setPrice(long price) {
 		this.price = price;
 	}
-	
+ 	
 	public Product(int id, String name, String description, long price) {
 		super();
 		this.id = id;
@@ -47,7 +47,7 @@ public class Product {
 		this.price = price;
 	}
 	
-	public Product() {
+	public Product(){
 		super();
   	// TODO Auto-generated constructor stub
 	}

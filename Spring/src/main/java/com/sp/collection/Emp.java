@@ -1,5 +1,4 @@
 package com.sp.collection;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -7,14 +6,11 @@ import java.util.Set;
 
 public class Emp {
 
-	
 	private String name;
 	private List<String> phones;
 	private Set<String> addresses;
 	private Map<String, String> courses;
 	private Properties props;
-	
-	
 	
 	public Properties getProps() {
 		return props;
@@ -48,14 +44,12 @@ public class Emp {
 		this.courses = courses;
 	}
 	
-	public Emp(String name, List<String> phones, Set<String> addresses, Map<String, String> courses, Properties props) {
-		super();
-		this.name = name;
-		this.phones = phones;
-		this.addresses = addresses;
-		this.courses = courses;
-		this.props = props;
-    }
+	/*
+	 * public Emp(String name, List<String> phones, Set<String> addresses,
+	 * Map<String, String> courses, Properties props) { super(); this.name = name;
+	 * this.phones = phones; this.addresses = addresses; this.courses = courses;
+	 * this.props = props; }
+	 */
 
 	public Emp() {
 		super();
@@ -65,6 +59,5 @@ public class Emp {
 	public String toString() {
 		return "Emp [name=" + name + ", phones=" + phones + ", addresses=" + addresses + ", courses=" + courses
 				+ ", props=" + props + "]";
-	}
-	
+	}	
 }

@@ -29,6 +29,7 @@
 </util:map>
 
 <!--  standalone properties -->
+
 <util:properties id="dbconfig">
 
   <prop key="driver"> Com.mysql.jdbc.Driver</prop>
@@ -47,6 +48,7 @@
 <!-- <bean class="com.springcore.standalone.collections.Person" name ="person2">
   
    <property name="friend" ref="mybestfriends" />
- </bean> -->
-  
+   
+</bean> -->
+ 
 </beans>

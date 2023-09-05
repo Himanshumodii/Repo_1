@@ -1,5 +1,4 @@
 package com.springcore.auto.wired.Annotation;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,7 +12,3 @@ public class Test {
     System.out.println(emp1);	
 	}
 }
-
-
-
-

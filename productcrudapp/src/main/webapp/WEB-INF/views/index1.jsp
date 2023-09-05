@@ -25,9 +25,9 @@
    <c:forEach items="${product}" var="p1">
     <tr>
       <th scope="row">${p1.id}</th>
-      <td>${p1.name} </td>
-      <td>${p1.description} </td>
-      <td>${p1.price} </td>
+      <td>${p1.name}</td>
+      <td>${p1.description}</td>
+      <td>${p1.price}</td>
       <td>
         <a href="delete/${p1.id}"><i class="fa-sharp fa-solid fa-trash text-danger" style="font-size: 25px;"></i></a>
         <a href="update/${p1.id}"><i class="fas fa-pen-nib text-primary" style="font-size: 25px;"></i></a>

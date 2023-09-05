@@ -5,15 +5,16 @@ import org.springframework.context.annotation.Configuration;
 
 //@ComponentScan(basePackages = "com.springcore.javaconfig")
 @Configuration
-public class javaConfig {
+public class javaConfig{
 
 	@Bean
-	public Samosa getSamosa() {
+	public Samosa getSamosa(){
 		return new Samosa();
 	}
 	//@Bean(name = {"student","temp","con"})
+	
 	@Bean
-	public Student getStudent() {
+	public Student getStudent(){
 		Student student = new Student(getSamosa());
 		return student;
 	}

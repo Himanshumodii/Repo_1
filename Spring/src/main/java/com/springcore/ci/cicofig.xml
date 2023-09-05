@@ -9,13 +9,11 @@
  http://www.springframework.org/schema/beans/context
  http://www.springframework.org/schema/beans/context/spring-context.xsd">
 
-   <bean class="com.springcore.ci.Certi" name = "cer">
-     <constructor-arg  value="Java Harman Coding Certification" /> 
-   </bean> 
-   <!--   
+    
+  <!--    
      <bean class="com.springcore.ci.Certi" name="cer" c:name="Java Harman Coding Certification">
-  </bean>
-   -->
+     </bean>
+    -->
   
   <bean class="com.springcore.ci.Person" name="person">
       <constructor-arg value="Himanshu" />
@@ -26,8 +24,12 @@
          <value>46769457</value>
          <value>543345</value>
          <value>456256</value>
-      </list>
+        </list>
       </constructor-arg>
+  </bean>
+  
+  <bean class="com.springcore.ci.Certi" name = "cer">
+     <constructor-arg  value="Java Harman Coding Certification" /> 
   </bean> 
- 
+   
 </beans>

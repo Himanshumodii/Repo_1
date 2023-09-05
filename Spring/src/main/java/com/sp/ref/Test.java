@@ -9,8 +9,8 @@ public class Test {
 
 	  ApplicationContext context = new ClassPathXmlApplicationContext("com/sp/ref/ref_config.xml");
 	  A temp = (A) context.getBean("aref");
-	  System.out.println(temp.getX());
-	  System.out.println(temp.getOb().getY());
+	//  System.out.println(temp.getX());
+	//  System.out.println(temp.getOb().getY());
 	  System.out.println(temp); 
 	}
 }

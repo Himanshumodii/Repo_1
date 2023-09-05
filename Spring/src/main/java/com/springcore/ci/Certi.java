@@ -1,8 +1,8 @@
 package com.springcore.ci;
 
-public class Certi {
+public class Certi{
 
-	 String name;
+    String name;
 	
 	public Certi(String name) {
 		super();
@@ -14,4 +14,5 @@ public class Certi {
 		return this.name;
 	}
 */
+	
 }

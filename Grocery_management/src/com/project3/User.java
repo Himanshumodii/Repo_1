@@ -1,4 +1,4 @@
- package com.project3;
+package com.project3;
 
 public class User {
 

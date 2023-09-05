@@ -27,11 +27,11 @@ public class Poha {
     
 	@PostConstruct
 	public void start() {
-		System.out.println("starting method");
+		System.out.println("starting1 method");
 	}
 	
 	@PreDestroy
 	public void end() {
-		System.out.println("ending method");
+		System.out.println("ending1 method");
 	}
 }

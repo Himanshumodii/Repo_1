@@ -13,7 +13,7 @@ import com.spring.jdbc.dao.StudentDaoImp;
 public class Jdbcconfig {
 
   @Bean("ds")
-  public DriverManagerDataSource getDataSource() {
+  public DriverManagerDataSource getDataSource(){
 	  
 	  DriverManagerDataSource ds = new DriverManagerDataSource();
 	  ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -29,10 +29,12 @@ public class Jdbcconfig {
 	  jdbcTemplate.setDataSource(getDataSource());
       return jdbcTemplate;
   }
+  
 	/*
-	 * @Bean("studentDao") public StudentDao getStudentDao() {
-	 * 
+	 * @Bean("studentDao") 
+	 * public StudentDao getStudentDao() {
 	 * StudentDaoImp studentDao = new StudentDaoImp();
-	 * studentDao.setJdbcTemplate(getTemplate()); return studentDao; }
-	 */
+	 * studentDao.setJdbcTemplate(getTemplate()); return studentDao;
+	 *  }
+	 */	 
 }

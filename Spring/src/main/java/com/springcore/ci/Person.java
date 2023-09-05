@@ -26,5 +26,4 @@ public class Person {
 		return this.name+" : "+this.persionId+"{ "+this.certi.name+" }";
 	}	*/
 	
-	
 }

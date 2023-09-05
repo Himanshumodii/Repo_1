@@ -16,7 +16,7 @@ public class Person {
 	public void setProperties(Properties properties) {
 		this.properties = properties;
 	}
-
+ 
 	public Map<String, Integer> getFeesstructure() {
 		return feesstructure;
 	}
@@ -37,5 +37,4 @@ public class Person {
 	public String toString() {
 		return "Person [friend=" + friend + ", feesstructure=" + feesstructure + "]";
 	}
-
 }

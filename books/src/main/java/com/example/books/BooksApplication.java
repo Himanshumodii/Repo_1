@@ -41,5 +41,5 @@ public class BooksApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		repositoryRestConfiguration.exposeIdsFor(Book.class);
 	}
-
+	
 }

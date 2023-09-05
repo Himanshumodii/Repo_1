@@ -22,6 +22,4 @@
   
   <bean class="com.springcore.auto.wired.Annotation.Emp" name="emp1" />
   
-  
 </beans>      
-  

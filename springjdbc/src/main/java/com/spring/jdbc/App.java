@@ -7,10 +7,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import com.spring.jdbc.entites.Student;
 import com.spring.jdbc.dao.*;
 
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
+    	
     System.out.println( "Hello World!" );
     ApplicationContext context = new AnnotationConfigApplicationContext(Jdbcconfig.class);
     
@@ -18,14 +19,14 @@ public class App
     StudentDao studentDao = (StudentDao) context.getBean("studentDao");
     
     // insert..............
-   /*
+    /*
 	   Student student = new Student();
 	   student.setId(125);
 	   student.setName("Gaurav Ji");
 	   student.setCity("Balghar");
 	   int result = studentDao.insert(student);
 	   System.out.println("Student Added:"+result);
-   */	 
+    */	 
     // update..............
 	/*
 	 * Student student = new Student();
@@ -48,12 +49,12 @@ public class App
 	/*
 	 * Student student = studentDao.getStudent(45); System.out.println(student);
 	 */
-    
     // for multiple values
     
     List<Student> students = studentDao.getAllStudents();
     for(Student s:students) {
     	System.out.println(s);
-      }    
-    }
+     }
+    
+   }
 }

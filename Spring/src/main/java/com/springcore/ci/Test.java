@@ -10,5 +10,6 @@ public class Test {
 	ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/ci/cicofig.xml");
     Person p=(Person) context.getBean("person");
     System.out.println(p);
+
 	}
 }

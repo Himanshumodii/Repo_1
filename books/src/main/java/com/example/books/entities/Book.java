@@ -1,5 +1,4 @@
 package com.example.books.entities;
-
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,15 +15,16 @@ import org.springframework.data.jpa.repository.Temporal;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-public class Book {
+public class Book{
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@NotNull
-	private String title;
-	private String author;
-	private int pages;
+	private String title="Jai shree";
+	private String author="RK";
+	private int pages=45;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@PastOrPresent
@@ -91,4 +91,7 @@ public class Book {
 	public void setDateCreation(Date dateCreation) {
 		this.dateCreation = dateCreation;
 	}
+
 }
+
+

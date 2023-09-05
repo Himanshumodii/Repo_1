@@ -4,7 +4,7 @@ public class jai {
    
 	private Emp emp;
 
-	public Emp getEmp() {
+	public Emp getEmp(){
 		return emp;
 	}
 

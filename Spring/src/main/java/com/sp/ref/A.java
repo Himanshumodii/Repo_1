@@ -3,6 +3,8 @@ public class A {
 
 	private int x;
 	private B ob;
+	
+	
 	public int getX() {
 		return x;
 	}
@@ -12,6 +14,7 @@ public class A {
 	public void setX(int x) {
 		this.x = x;
 	}
+    
 	public void setOb(B ob) {
 		this.ob = ob;
 	}
@@ -20,9 +23,8 @@ public class A {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	@Override
+	
 	public String toString() {
 		return "A [x=" + x + ", ob=" + ob + "]";
 	}
 }
-

@@ -2,8 +2,9 @@ package com.springcore.SpEl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
 @Component("obj")
-public class Demo {
+public class Demo{
  
   @Value("#{22+11}")
   private int x;
@@ -41,7 +42,7 @@ public class Demo {
 		return e;
 	  }
 
-	public void setE(double e) {
+   	public void setE(double e) {
 		this.e = e;
 	  }
 
@@ -53,17 +54,21 @@ public class Demo {
 		System.out.println("YES Set z");
 		this.z = z;
 	  }
+	  
 	  public int getX() {
 		return x;
-	   }
-	  public int getY() {
+	  }
+	  
+	  public int getY(){
 		return y;
-	   }
+	  }
+	  
 	  public void setX(int x) {
 		System.out.println("YES Set x");
 		this.x = x;
 	   }
-	  public void setY(int y) {
+	  
+	  public void setY(int y){
 		System.out.println("yes Set y");
 		this.y = y;
 	   }
